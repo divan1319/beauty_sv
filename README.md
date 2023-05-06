@@ -1,26 +1,17 @@
 # Beauty SV
+Red Social para modelos. El objetivo de Beauty SV es de mostrar la belleza que poseen las mujeres de nuestro pais, y puedan ser apoyadas para alcanzar sus objetivos.
 
 
-## Project Setup
+## Instalar dependencias
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Compilar para desarrollo.
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+### Proyecto en fase de desarrollo
