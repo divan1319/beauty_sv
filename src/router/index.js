@@ -36,13 +36,18 @@ const router = createRouter({
       path:'/perfil/:username/settings',
       name:'editar',
       component:EditarPerfil
+    },
+    {
+      path:'/prueba',
+      name:'pruebas',
+      component: ()=> import('@/views/PruebasView.vue')
     }
   ]
 });
 
 ///protegiendo rutas: publicPages se mostraran todas las rutas donde no se necesitan autenticacion 
 router.beforeEach(async(to)=>{
-  const publicPages = ['/','/login','/register'];
+  const publicPages = ['/','/login','/register','/prueba'];
   const authRequired = !publicPages.includes(to.path);
   const auth = useAuthStore();
   if(authRequired && !auth.isAuth){
